@@ -1,6 +1,6 @@
 # Connect 4 AI: Image Classification and Game Bot
 
-## 📌 Project Overview
+##  Project Overview
 This project involves building a **full-stack AI-driven Connect 4 bot** using deep learning and cloud deployment. The goal is to **train a machine learning model** to play Connect 4, dockerize it, host it on AWS, and develop an interactive **web-based interface** using Anvil.
 
 The key components of this project include:
@@ -9,20 +9,16 @@ The key components of this project include:
 - **Web Application**: Deploying an interactive Anvil-based UI where users can play against the trained bot.
 - **Cloud Hosting**: Deploying the trained model on AWS using **Docker** for backend hosting.
 
----
-
-## 🚀 Features
+## Features
 - Generates a **large dataset** of Connect 4 board positions and corresponding best moves.
 - Implements **MCTS-based AI** for self-play and move generation.
 - Trains and compares **CNN and Transformer models** for move prediction.
 - Provides an **interactive web interface** to play against the AI bot.
 - Deploys **model inference on AWS**, making it accessible via Anvil.
 
----
+##  Installation & Setup
 
-## 🛠️ Installation & Setup
-
-### **1️⃣ Prerequisites**
+### ** Prerequisites**
 Ensure you have the following installed:
 - **Python 3.7+**
 - **TensorFlow / PyTorch**
@@ -30,23 +26,23 @@ Ensure you have the following installed:
 - **AWS account** (for cloud hosting)
 - **Anvil account** (for web UI)
 
-### **2️⃣ Clone the Repository**
+### ** Clone the Repository**
 ```bash
 git clone https://github.com/your-username/connect4-ai.git
 cd connect4-ai
 ```
 
-### **3️⃣ Install Required Dependencies**
+### ** Install Required Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### **4️⃣ Generate Training Data using MCTS**
+### ** Generate Training Data using MCTS**
 ```bash
 python generate_dataset.py --num_games 100000 --output data/connect4_dataset.csv
 ```
 
-### **5️⃣ Train the AI Models**
+### ** Train the AI Models**
 #### Train CNN Model:
 ```bash
 python train_cnn.py --data data/connect4_dataset.csv --epochs 50
@@ -56,18 +52,17 @@ python train_cnn.py --data data/connect4_dataset.csv --epochs 50
 python train_transformer.py --data data/connect4_dataset.csv --epochs 50
 ```
 
-### **6️⃣ Dockerize the Model for Cloud Deployment**
+### ** Dockerize the Model for Cloud Deployment**
 ```bash
 docker build -t connect4-bot .
 docker run -p 8080:8080 connect4-bot
 ```
 
-### **7️⃣ Deploy on AWS**
+### ** Deploy on AWS**
 1. Set up an **AWS EC2 / Lightsail instance**.
 2. Transfer model files using **SFTP**.
 3. Run the backend server.
 
----
 
 ## 📂 Project Structure
 ```
@@ -84,9 +79,8 @@ docker run -p 8080:8080 connect4-bot
 │── README.md               # Project documentation
 ```
 
----
 
-## 🎮 Web Application
+## Web Application
 The web application allows users to:
 - **Play against AI** (CNN or Transformer)
 - **Start a new game**
@@ -95,46 +89,24 @@ The web application allows users to:
 🔗 **Live Demo**: [MSBA25optim2-YourGroup.anvil.app](#)  
 🔗 **Clone Anvil App**: [Anvil Project Link](#)
 
----
-
-## 📈 Model Performance
+## Model Performance
 - The AI models are evaluated based on:
   - **Win rate against MCTS bots**
   - **Move accuracy on validation datasets**
   - **Performance comparison between CNN & Transformer**
 
----
-
-## 📡 Hosting & Deployment
+## Hosting & Deployment
 - **Backend Model Deployment**: AWS EC2 / Lightsail
 - **Web UI Deployment**: Anvil
 - **Dockerized API Server**: Flask / FastAPI
 
----
-
-## 🔧 Customization & Enhancements
+## Customization & Enhancements
 - Improve AI **move prediction accuracy** by refining CNN/Transformer architectures.
 - Optimize AWS deployment for **scalability and cost efficiency**.
 - Enhance the Anvil UI with **real-time move visualization**.
 
----
+## Contact & Contributions
 
-## 📜 License
-This project is licensed under the **MIT License**.
 
 ---
 
-## 📩 Contact & Contributions
-For questions, issues, or contributions, reach out via [GitHub Issues](https://github.com/your-username/connect4-ai/issues).
-```
-
----
-
-### **Key Features of This README:**
-✅ **Clear project breakdown** for easy understanding  
-✅ **Step-by-step installation and setup** instructions  
-✅ **Detailed commands** for training and deploying models  
-✅ **Project structure and file descriptions**  
-✅ **Live web app and hosting details**  
-
-This README is **ready to copy-paste** into **GitHub**. Let me know if you need refinements!

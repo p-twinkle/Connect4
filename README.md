@@ -26,23 +26,23 @@ Ensure you have the following installed:
 - **AWS account** (for cloud hosting)
 - **Anvil account** (for web UI)
 
-### ** Clone the Repository**
+###  Clone the Repository
 ```bash
 git clone https://github.com/your-username/connect4-ai.git
 cd connect4-ai
 ```
 
-### ** Install Required Dependencies**
+### Install Required Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### ** Generate Training Data using MCTS**
+###  Generate Training Data using MCTS
 ```bash
 python generate_dataset.py --num_games 100000 --output data/connect4_dataset.csv
 ```
 
-### ** Train the AI Models**
+###  Train the AI Models
 #### Train CNN Model:
 ```bash
 python train_cnn.py --data data/connect4_dataset.csv --epochs 50
@@ -52,13 +52,13 @@ python train_cnn.py --data data/connect4_dataset.csv --epochs 50
 python train_transformer.py --data data/connect4_dataset.csv --epochs 50
 ```
 
-### ** Dockerize the Model for Cloud Deployment**
+###  Dockerize the Model for Cloud Deployment
 ```bash
 docker build -t connect4-bot .
 docker run -p 8080:8080 connect4-bot
 ```
 
-### ** Deploy on AWS**
+###  Deploy on AWS
 1. Set up an **AWS EC2 / Lightsail instance**.
 2. Transfer model files using **SFTP**.
 3. Run the backend server.

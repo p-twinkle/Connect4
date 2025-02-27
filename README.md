@@ -18,7 +18,7 @@ The key components of this project include:
 
 ##  Installation & Setup
 
-### ** Prerequisites**
+###  Prerequisites
 Ensure you have the following installed:
 - **Python 3.7+**
 - **TensorFlow / PyTorch**
